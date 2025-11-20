@@ -7,23 +7,34 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
+ <header class="topbar">
+  <div class="container topbar-inner">
+
+    <!-- ด้านซ้าย: โลโก้ TCFA + ป้ายลีก -->
+    <div class="topbar-left">
+      <!-- ตำแหน่งโลโก้ TCFA (แม่) ถ้ายังไม่มีไฟล์ ให้ปล่อยว่างไว้แบบนี้ได้เลย -->
+      <!-- ถ้ามีไฟล์โลโก้แล้วค่อยเติม src เช่น tcfa-logo.png -->
+      <!-- <img src="tcfa-logo.png" alt="TCFA" class="tcfa-logo" /> -->
+
+      <!-- ป้ายลีก: ตัวหนังสือขาวบนพื้นดำ -->
       <div class="logo">
-        <!-- ถ้ามีโลโก้เป็นรูป ใส่ <img> ตรงนี้ได้ -->
-        <!-- <img src="logo.png" alt="TCF" style="height:28px;"> -->
         <span>TCF LEAGUE 2026</span>
       </div>
-      <nav class="nav">
-        <a href="index.html" class="nav-link active">หน้าแรก</a>
-        <a href="standings.html" class="nav-link">ตารางคะแนน</a>
-        <a href="fixtures.html" class="nav-link">โปรแกรมแข่ง</a>
-        <a href="rules.html" class="nav-link">ระเบียบการแข่งขัน</a>
-        <a href="players.html" class="nav-link">นักกีฬา</a>
-        <a href="contact.html" class="nav-link">ติดต่อ</a>
-      </nav>
     </div>
-  </header>
+
+    <!-- ด้านขวา: เมนู -->
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">หน้าแรก</a>
+      <a href="standings.html" class="nav-link">ตารางคะแนน</a>
+      <a href="fixtures.html" class="nav-link">โปรแกรมแข่ง</a>
+      <a href="rules.html" class="nav-link">ระเบียบการแข่งขัน</a>
+      <a href="players.html" class="nav-link">นักกีฬา</a>
+      <a href="contact.html" class="nav-link">ติดต่อ</a>
+    </nav>
+
+  </div>
+</header>
+
 
   <main class="main">
     <div class="container">
