@@ -2,14 +2,16 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
-  <title>โปรแกรมแข่ง | Thailand Christian Football League 2026</title>
+  <title>โปรแกรมแข่ง | TCF League 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="topbar">
     <div class="container topbar-inner">
-      <div class="logo">TCF League 2026</div>
+      <div class="logo">
+        <span>TCF LEAGUE 2026</span>
+      </div>
       <nav class="nav">
         <a href="index.html" class="nav-link">หน้าแรก</a>
         <a href="standings.html" class="nav-link">ตารางคะแนน</a>
@@ -25,23 +27,33 @@
     <div class="container">
       <section class="page-header">
         <h1>โปรแกรมการแข่งขัน</h1>
-        <p class="subtitle">แก้ไขตารางนี้ทุกครั้งเมื่อมีการอัปเดตแมตช์</p>
+        <p class="subtitle">แก้ไขข้อมูลนี้ทุกครั้งเมื่อมีการอัปเดตแมตช์</p>
       </section>
 
       <section class="card">
         <div class="card-header">
-          <h2>แมตช์ประจำวันศุกร์</h2>
+          <h2>แมตช์วันศุกร์</h2>
         </div>
         <div class="card-body schedule-list">
           <div class="match-day-label">ศุกร์ 9 มกราคม 2026</div>
+
           <div class="match-item">
-            <div class="match-time">19:30 น.</div>
+            <div class="match-time">19:30</div>
             <div class="match-teams">
               ทีม A <span class="vs">vs</span> ทีม B
             </div>
-            <div class="match-field">สนามใหญ่ ทีซี พระราม 9</div>
+            <div class="match-field">สนามทีซี พระราม 9 (สนามใหญ่)</div>
           </div>
-          <!-- เพิ่มแมตช์อื่น ๆ ตามสัปดาห์ -->
+
+          <div class="match-item">
+            <div class="match-time">21:00</div>
+            <div class="match-teams">
+              ทีม C <span class="vs">vs</span> ทีม D
+            </div>
+            <div class="match-field">สนามทีซี พระราม 9 (สนามใหญ่)</div>
+          </div>
+
+          <!-- เพิ่ม block match-item ตามจำนวนคู่ที่เตะ -->
         </div>
       </section>
     </div>
@@ -49,7 +61,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© 2026 Thailand Christian Football League — All rights reserved.</p>
+      <p>© 2026 Thailand Christian Football League</p>
     </div>
   </footer>
   <script src="main.js"></script>
