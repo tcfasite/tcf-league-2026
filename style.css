@@ -4,12 +4,13 @@
   --color-green: #24fa80;
   --color-white: #ffffff;
 
-  --color-bg: var(--color-white);           /* พื้นหลังหลักทั้งเว็บ */
-  --color-header-bg: var(--color-green);    /* พื้นหลัง header */
-  --color-logo-bg: var(--color-black);      /* พื้นหลังกล่องโลโก้ */
-  --color-text: #000000;                    /* ตัวอักษรปกติ */
-  --color-text-light: #666666;              /* ตัวอักษรสีเทา */
-  --color-border: #e5e7eb;                  /* เส้นขอบการ์ด/ตาราง */
+  --color-bg: var(--color-white);
+  --color-header-bg: var(--color-green);
+  --color-logo-bg: var(--color-black);
+  --color-text: #000000;
+  --color-text-light: #666666;
+  --color-border: #e5e7eb;
+
   --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 }
@@ -41,7 +42,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: var(--color-header-bg); /* แถบเขียวทั้งแนว */
+  background: var(--color-header-bg); /* เขียวทั้งแถบ */
   border-bottom: 2px solid var(--color-black);
 }
 
@@ -52,16 +53,15 @@ body {
   height: 64px;
 }
 
-/* ด้านซ้าย: โลโก้ TCFA + ป้ายลีก */
+/* ซ้าย: โลโก้ TCFA + ป้ายลีก */
 .topbar-left {
   display: flex;
   align-items: center;
-  gap: 12px;      /* ระยะห่างระหว่างโลโก้ TCFA กับป้ายลีก */
+  gap: 12px;
 }
 
-/* โลโก้ TCFA (รูป) */
 .tcfa-logo {
-  height: 32px;   /* ปรับความสูงโลโก้ได้ตรงนี้ */
+  height: 32px;
   width: auto;
 }
 
@@ -70,20 +70,18 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 6px 14px;
-  background: var(--color-logo-bg);   /* กล่องดำ */
-  color: var(--color-white);          /* ตัวอักษรขาว */
+  background: var(--color-logo-bg); /* ดำ */
+  color: var(--color-white);        /* ตัวขาว */
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 0.9rem;
-  border-radius: 0;                   /* ทำให้ขอบเหลี่ยม ไม่โค้ง */
+  border-radius: 0;                 /* ขอบเหลี่ยม */
 }
 
-/* ถ้าอยากใส่โลโก้เป็นรูป ให้เอา <img> ไปไว้ใน .logo ได้เลย */
 .logo span {
-  margin-left: 8px;
+  margin-left: 0;
 }
-
 
 .nav {
   display: flex;
@@ -94,7 +92,7 @@ body {
 .nav-link {
   font-size: 0.9rem;
   text-decoration: none;
-  color: var(--color-black);          /* ตัวดำบนพื้นเขียว */
+  color: var(--color-black);
   font-weight: 600;
   padding: 4px 0;
   border-bottom: 2px solid transparent;
@@ -128,11 +126,11 @@ body {
   color: var(--color-text-light);
 }
 
-/* ---------- HERO หน้าแรก ---------- */
+/* ---------- HERO ---------- */
 .hero {
   margin-bottom: 24px;
-  padding: 24px 24px 20px;
-  border-radius: 0px;
+  padding: 24px;
+  border-radius: 0;
   border: 1px solid var(--color-border);
   background: var(--color-white);
 }
@@ -166,13 +164,14 @@ body {
   gap: 10px;
 }
 
+/* ---------- BUTTONS ---------- */
 .btn-primary,
 .btn-ghost {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 8px 18px;
-  border-radius: 999px;
+  border-radius: 999px;      /* ถ้าอยากให้ปุ่มเหลี่ยม ให้เปลี่ยนเป็น 0 */
   font-size: 0.85rem;
   text-decoration: none;
   cursor: pointer;
@@ -198,11 +197,12 @@ body {
   background: rgba(0, 0, 0, 0.04);
 }
 
-/* ---------- QUICK LINKS หน้าแรก ---------- */
+/* ---------- QUICK LINKS GRID ---------- */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 900px) {
@@ -218,7 +218,7 @@ body {
 
 .link-card {
   background: var(--color-white);
-  border-radius: 0px;
+  border-radius: 0;
   border: 1px solid var(--color-border);
   padding: 14px 16px;
   text-decoration: none;
@@ -243,10 +243,10 @@ body {
   color: var(--color-text-light);
 }
 
-/* ---------- CARD (กล่องเนื้อหา) ---------- */
+/* ---------- CARD ---------- */
 .card {
   background: var(--color-white);
-  border-radius: 0px;
+  border-radius: 0;
   border: 1px solid var(--color-border);
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
   margin-bottom: 20px;
@@ -281,11 +281,7 @@ body {
   margin-bottom: 4px;
 }
 
-.list li span {
-  color: var(--color-text-light);
-}
-
-/* ---------- TABLE (ตารางคะแนน / ผู้เล่น) ---------- */
+/* ---------- TABLE ---------- */
 .table-wrapper {
   overflow-x: auto;
 }
@@ -329,7 +325,7 @@ body {
   color: var(--color-black);
 }
 
-/* ---------- SCHEDULE (โปรแกรมแข่ง) ---------- */
+/* ---------- SCHEDULE ---------- */
 .schedule-list {
   display: flex;
   flex-direction: column;
@@ -346,7 +342,7 @@ body {
 
 .match-item {
   padding: 8px 10px;
-  border-radius: 0px;
+  border-radius: 0;
   border: 1px solid var(--color-border);
   background: #f9fafb;
   display: grid;
@@ -375,6 +371,13 @@ body {
   margin: 0 6px;
 }
 
+/* ---------- SMALL NOTE TEXT ---------- */
+.note-small {
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: var(--color-text-light);
+}
+
 /* ---------- FOOTER ---------- */
 .footer {
   border-top: 1px solid var(--color-border);
@@ -384,7 +387,7 @@ body {
   text-align: center;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* ---------- RESPONSIVE HEADER ---------- */
 @media (max-width: 768px) {
   .topbar-inner {
     flex-direction: column;
