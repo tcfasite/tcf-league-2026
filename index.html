@@ -7,44 +7,47 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <header class="topbar">
-  <div class="container topbar-inner">
 
-    <!-- ด้านซ้าย: โลโก้ TCFA + ป้ายลีก -->
-    <div class="topbar-left">
-      <!-- ตำแหน่งโลโก้ TCFA (แม่) ถ้ายังไม่มีไฟล์ ให้ปล่อยว่างไว้แบบนี้ได้เลย -->
-      <!-- ถ้ามีไฟล์โลโก้แล้วค่อยเติม src เช่น tcfa-logo.png -->
-      <!-- <img src="tcfa-logo.png" alt="TCFA" class="tcfa-logo" /> -->
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="container topbar-inner">
 
-      <!-- ป้ายลีก: ตัวหนังสือขาวบนพื้นดำ -->
-      <div class="logo">
-        <span>TCF LEAGUE 2026</span>
+      <!-- ซ้าย: โลโก้ TCFA + ป้ายลีก -->
+      <div class="topbar-left">
+        <!-- ถ้ามีไฟล์โลโก้แล้ว (เช่น tcfa-logo.png) ให้เอา comment ออก -->
+        <!-- <img src="tcfa-logo.png" alt="TCFA Logo" class="tcfa-logo" /> -->
+
+        <div class="logo">
+          <!-- ถ้ามีโลโก้ TCFL เป็นรูป ก็ใส่ <img> ตรงนี้แทนข้อความได้ -->
+          <span>TCF LEAGUE 2026</span>
+        </div>
       </div>
+
+      <!-- ขวา: เมนู -->
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">หน้าแรก</a>
+        <a href="standings.html" class="nav-link">ตารางคะแนน</a>
+        <a href="fixtures.html" class="nav-link">โปรแกรมแข่ง</a>
+        <a href="rules.html" class="nav-link">ระเบียบการแข่งขัน</a>
+        <a href="players.html" class="nav-link">นักกีฬา</a>
+        <a href="contact.html" class="nav-link">ติดต่อ</a>
+      </nav>
+
     </div>
+  </header>
 
-    <!-- ด้านขวา: เมนู -->
-    <nav class="nav">
-      <a href="index.html" class="nav-link active">หน้าแรก</a>
-      <a href="standings.html" class="nav-link">ตารางคะแนน</a>
-      <a href="fixtures.html" class="nav-link">โปรแกรมแข่ง</a>
-      <a href="rules.html" class="nav-link">ระเบียบการแข่งขัน</a>
-      <a href="players.html" class="nav-link">นักกีฬา</a>
-      <a href="contact.html" class="nav-link">ติดต่อ</a>
-    </nav>
-
-  </div>
-</header>
-
-
+  <!-- MAIN -->
   <main class="main">
     <div class="container">
+
+      <!-- HERO -->
       <section class="hero">
         <div class="hero-text">
           <div class="hero-tag">THAILAND CHRISTIAN FOOTBALL ALLIANCE</div>
           <h1 class="hero-title">Thailand Christian Football League 2026</h1>
           <p class="hero-subtitle">
             ลีกฟุตบอลสมัครเล่นของคริสเตียน ที่เน้นบรรยากาศมิตรภาพ กีฬา
-            และเกียรติพระนามพระเจ้าไปพร้อมกัน
+            และเกียรติพระนามพระเจ้าร่วมกัน
           </p>
           <div class="hero-actions">
             <a href="standings.html" class="btn-primary">ดูตารางคะแนน</a>
@@ -53,6 +56,7 @@
         </div>
       </section>
 
+      <!-- QUICK LINKS -->
       <section class="grid">
         <a href="standings.html" class="link-card">
           <div class="link-card-title">ตารางคะแนน</div>
@@ -69,7 +73,7 @@
         <a href="rules.html" class="link-card">
           <div class="link-card-title">ระเบียบการแข่งขัน</div>
           <div class="link-card-desc">
-            รูปแบบการแข่งขัน กติกา และข้อกำหนดต่าง ๆ
+            รูปแบบการแข่งขัน กติกา และข้อกำหนดสำคัญ
           </div>
         </a>
 
@@ -87,9 +91,102 @@
           </div>
         </a>
       </section>
+
+      <!-- OVERVIEW: โปรแกรมสัปดาห์นี้ (ตัวอย่าง) -->
+      <section class="card">
+        <div class="card-header">
+          <h2>โปรแกรมสัปดาห์นี้ (ตัวอย่าง)</h2>
+        </div>
+        <div class="card-body schedule-list">
+          <div class="match-day-label">ศุกร์ 9 มกราคม 2026</div>
+
+          <div class="match-item">
+            <div class="match-time">19:30</div>
+            <div class="match-teams">
+              ทีม A <span class="vs">vs</span> ทีม B
+            </div>
+            <div class="match-field">สนามทีซี พระราม 9 (สนามใหญ่)</div>
+          </div>
+
+          <div class="match-item">
+            <div class="match-time">21:00</div>
+            <div class="match-teams">
+              ทีม C <span class="vs">vs</span> ทีม D
+            </div>
+            <div class="match-field">สนามทีซี พระราม 9 (สนามใหญ่)</div>
+          </div>
+
+          <p class="note-small">
+            ดูรายละเอียดทั้งหมดได้ที่ <a href="fixtures.html">หน้าโปรแกรมแข่ง</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- OVERVIEW: Top 3 -->
+      <section class="card table-card">
+        <div class="card-header">
+          <h2>อันดับปัจจุบัน (Top 3)</h2>
+        </div>
+        <div class="card-body table-wrapper">
+          <table class="standings">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>ทีม</th>
+                <th>แข่ง</th>
+                <th>แต้ม</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="team-name">ทีมตัวอย่าง A</td>
+                <td>4</td>
+                <td class="points">10</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="team-name">ทีมตัวอย่าง B</td>
+                <td>4</td>
+                <td class="points">9</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="team-name">ทีมตัวอย่าง C</td>
+                <td>4</td>
+                <td class="points">7</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note-small">
+            ดูตารางคะแนนทั้งหมดได้ที่
+            <a href="standings.html">หน้าตารางคะแนน</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- OVERVIEW: ไฮไลต์กติกา -->
+      <section class="card">
+        <div class="card-header">
+          <h2>ไฮไลต์ระเบียบการแข่งขัน</h2>
+        </div>
+        <div class="card-body">
+          <ul class="list">
+            <li>เปิดรับสมัคร 6 ทีม ทีมละไม่เกิน 20 คน</li>
+            <li>แต่ละทีมแข่งขันทั้งหมด 10 นัด (พบกันทีมละ 2 ครั้ง)</li>
+            <li>ชนะ 3 แต้ม เสมอ 1 แต้ม แพ้ 0 แต้ม</li>
+          </ul>
+          <p class="note-small">
+            อ่านรายละเอียดทั้งหมดได้ที่
+            <a href="rules.html">หน้าระเบียบการแข่งขัน</a>
+          </p>
+        </div>
+      </section>
+
     </div>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <p>© 2026 Thailand Christian Football League — Thailand Christian Football Alliance</p>
