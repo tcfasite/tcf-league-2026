@@ -117,7 +117,7 @@ body {
 .hero {
   margin-bottom: 24px;
   padding: 24px 24px 20px;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid var(--color-border);
   background: var(--color-white);
 }
@@ -203,7 +203,7 @@ body {
 
 .link-card {
   background: var(--color-white);
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid var(--color-border);
   padding: 14px 16px;
   text-decoration: none;
@@ -231,7 +231,7 @@ body {
 /* ---------- CARD (กล่องเนื้อหา) ---------- */
 .card {
   background: var(--color-white);
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid var(--color-border);
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
   margin-bottom: 20px;
@@ -331,7 +331,7 @@ body {
 
 .match-item {
   padding: 8px 10px;
-  border-radius: 10px;
+  border-radius: 0px;
   border: 1px solid var(--color-border);
   background: #f9fafb;
   display: grid;
