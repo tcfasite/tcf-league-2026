@@ -389,7 +389,7 @@ body {
 }
 
 /* ---------- RESPONSIVE HEADER ---------- */
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .topbar-inner {
     flex-direction: column;
     align-items: flex-start;
