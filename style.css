@@ -408,8 +408,8 @@ body {
     }
 
     .league-logo {
-        height: 70px;
-        width: auto;
-    }
+  height: 52px;      /* ถ้ายังใหญ่ไป ลดเหลือ 48 หรือ 44 ได้เลย */
+  width: auto;
+  object-fit: contain;
 }
 
