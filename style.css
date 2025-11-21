@@ -50,10 +50,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;               /* เพิ่มระยะห่างระหว่างฝั่งโลโก้กับเมนู */
   height: 64px;
 }
 
-/* ซ้าย: โลโก้ TCFA + ป้ายลีก */
+/* ซ้าย: โลโก้ TCFA + โลโก้ลีก */
 .topbar-left {
   display: flex;
   align-items: center;
@@ -61,12 +62,20 @@ body {
 }
 
 .tcfa-logo {
-  height: 46px;  /* ขนาดประมาณโลโก้ Krafton */
+  height: 40px;            /* ให้เตี้ยกว่าโลโก้ลีกนิดนึง จะบาลานซ์ */
   width: auto;
   object-fit: contain;
 }
 
-/* ป้ายลีก TCF LEAGUE 2026 */
+/* โลโก้ลีกที่มีพื้นหลังดำ */
+.league-logo {
+  height: 52px;            /* ถ้าดูใหญ่ไปลอง 48px ได้ */
+  width: auto;
+  object-fit: contain;
+}
+
+/* ถ้าไม่ได้ใช้ .logo (ป้ายตัวหนังสือ) ที่เหลือ สามารถลบ block .logo ทิ้งได้
+   แต่ถ้าอยากเก็บไว้ เผื่อใช้ที่อื่น ก็ไม่เป็นไร */
 .logo {
   display: inline-flex;
   align-items: center;
@@ -88,6 +97,7 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
+  flex-wrap: nowrap;        /* บังคับไม่ให้เมนูหักลงบรรทัด */
 }
 
 .nav-link {
