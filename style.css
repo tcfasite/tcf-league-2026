@@ -407,3 +407,9 @@ body {
     padding: 18px 16px;
   }
 }
+
+.league-logo {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+}
