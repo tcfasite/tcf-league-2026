@@ -389,27 +389,27 @@ body {
 }
 
 /* ---------- RESPONSIVE HEADER ---------- */
-@media (max-width: 400px) {
-  .topbar-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-    height: auto;
-    padding: 8px 0;
-  }
+@media (max-width: 480px) {
+    .topbar-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        height: auto;
+        padding: 8px 0;
+    }
 
-  .nav {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
+    .nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
 
-  .hero {
-    padding: 18px 16px;
-  }
+    .hero {
+        padding: 18px 16px;
+    }
+
+    .league-logo {
+        height: 70px;
+        width: auto;
+    }
 }
 
-.league-logo {
-  height: 70px;
-  width: auto;
-  object-fit: contain;
-}
